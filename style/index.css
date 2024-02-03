@@ -1,0 +1,251 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  font-family: 'Jost', sans-serif;
+  background: linear-gradient(to right , rgb(40, 40, 131), rgb(49, 49, 152), rgb(101, 101, 255) , rgb(144, 144, 255) , rgb(152, 152, 255),rgb(169, 169, 255));
+}
+header{
+  width: 100%;
+  height: 100px;
+  /* background-color: aqua; */
+  padding: 10px 0;
+}
+nav{
+  width: 85%;
+  /* height: 50px; */
+  margin: 0 auto;
+  padding: 15px;
+  border-bottom: 2px solid rgba(28, 28, 156, 0.206);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.count-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  margin-left: 50px;
+}
+li{
+  /* color: aliceblue; */
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+li:hover{
+  transition-duration: 0.2s;
+  border-bottom: 2px solid rgba(28, 28, 156, 0.69) ;
+}
+.logo{
+  width: 100px;
+  height: 50px;
+}
+button{
+  width: 100px;
+  padding: 8px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+}
+.lgn{
+  background-color: rgb(0, 0, 137);
+  color: white;
+}
+.lgn:hover{
+  /* transition-delay: 1s; */
+  transition-duration: 1s;
+  background-color: rgb(0, 0, 203);
+  font-weight: 700;
+}
+.icon--mobile{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.icon{
+  color: rgb(0, 0, 0);
+  display: none;
+}
+section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.container-body{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-top: 200px;
+}
+.levels{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.level{
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 100px;
+  background-color: rgba(122, 122, 253, 0.264);
+  margin: 5px;
+}
+.border-between{
+  width: 3px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: rgb(0, 0, 137);
+  margin: 15px 0;
+}
+.describe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.supercell{
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to left, rgb(47, 47, 255) , rgb(98, 98, 255) ,rgb(133, 133, 255) );
+}
+.supercell:hover{
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+
+}
+.wiz{
+  color: blue;
+}
+.app-store{
+  margin: 15px 270px;
+}
+.app-store img{
+  cursor: pointer;
+  
+}
+.cont-wizard img{
+  width: 550px;
+  height: 550px;
+  animation: wizard 7s  0.2s infinite ;
+}
+@keyframes wizard{
+  0%{
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+
+  }
+}
+@media only screen and (max-width:795px) {
+  .count-logo{
+    display: none;
+  }
+  .btn-count{
+    display: none;
+  }
+  .icon--mobile{
+    display: flex;
+    /* margin-left: 15px; */
+  }
+  header{
+    padding: 0;
+  }
+  nav{
+    padding: 5px 0 15px 0;
+
+  }
+}
+@media only screen and (max-width:1500px){
+  .cont-wizard img{
+    width: 450px;
+    height: 450px;
+  }
+  section{
+    justify-content: center;
+  }
+  .container-body{
+    margin-top: 300px;
+    justify-content: center;
+    width: 60%;
+    gap: 35px;
+  }
+}
+@media only screen and (max-width:1330px){
+  .cont-wizard img{
+    width: 400px;
+    height: 400px;
+  }
+  .cont-wizard{
+    margin-top: 200px;
+  }
+  .container-body{
+    width: 70%;
+  }
+  .supercell{
+    width: 120px;
+  }
+  h2{
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width:1110px){
+  .container-body{
+    flex-direction: column;
+    width: 50%;
+  }
+  .app-store{
+    margin: 15px 150px;
+  }
+  .install-p{
+    width: 400px;
+    
+  }
+  .levels{
+    flex-direction: row;
+  }
+  .level-row{
+    display: flex;
+    gap: 5px;
+  }
+  .border-between{
+    height: 3px;
+    width: 50px;
+    margin: 0;
+  }
+} 
+@media only screen and (max-width:1000px){
+  section{
+    flex-direction: column;
+  }
+  .container-body{
+    margin-top: 100px;
+  }
+}
